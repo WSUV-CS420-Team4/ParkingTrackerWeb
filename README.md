@@ -16,7 +16,10 @@ Sponsor: [South Waterfront](http://www.southwaterfront.com/)
 
 ## Component Overview
 
-A web application to analyze parking data created by the Parking Tracker application.
+This is the web frontend. It will allow interaction and administration of the data set stored by the backend. It's currently
+developed in AngularJS, however AngularJS is surprisingly terrible and I may yet switch to something like Laravel. It interacts
+with the REST API to display the data collected and to provide information on utilization of parking. It also provides the interface
+for authentication.
 
 ## Authors
 
@@ -32,5 +35,20 @@ Only displays license plate data uploaded, does not provide any authentication o
 ## Build/Install
 
 - Upload files
-- Run bower
+- Run bower to populate dependencies
 
+## Configuration
+
+None required so far
+
+## Known Bugs & Caveats
+
+None so far
+
+## To Do
+
+- Provide an interface for OAuth authentication
+- Expand functionality
+- Provide an interface to access exported spreadsheet from API
+- Put authentication between user and data
+- Provide administrative interface
