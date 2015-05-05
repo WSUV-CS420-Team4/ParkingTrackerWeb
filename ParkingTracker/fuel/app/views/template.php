@@ -22,24 +22,32 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><?= Html::anchor('/', 'Home'); ?></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><?= Html::anchor('/', 'Home'); ?></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usage <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
+              <li><?= Html::anchor('/parking/daily', 'Daily'); ?></li>
+              <!--<li><?= Html::anchor('/parking/weekly', 'Weekly'); ?></li>
+              <li><?= Html::anchor('/parking/monthly', 'Monthly'); ?></li>
+               <li class="divider"></li>
               <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#">Separated link</a></li> -->
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Data <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><?= Html::anchor('/parking/', 'Parking'); ?></li>
+              <li><?= Html::anchor('/block/', 'Blocks'); ?></li>
+              <!-- <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li> -->
+            </ul>
+          </li>
+          <li><?= Html::anchor('/export', 'Export'); ?></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <p class="navbar-text">User Stuff</p>
+          <p class="navbar-text"></p>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -57,7 +65,7 @@
   </div> <!-- /container -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <?= Asset::js('bootstrap.min.js'); ?>
+  <?= Asset::js(array('bootstrap.min.js','main.js')); ?>
 
 </body>
 </html>

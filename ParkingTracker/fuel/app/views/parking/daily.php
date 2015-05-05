@@ -8,9 +8,9 @@
   <tbody>
   <?php foreach ($stalls as $stall): ?>
     <tr>
-      <td><?=$stall['Stall']?></td>
+      <td><?=$stall['StallStr']?></td>
       <?php foreach($times as $time): ?>
-        <td><?=$stall[$time]?></td>
+        <td><?php if (array_key_exists($time, $stall)) { echo $stall[$time]['Plate']; } ?></td>
       <?php endforeach; ?>
     </tr>
   <?php endforeach; ?>

@@ -13,9 +13,21 @@ class Controller_Parking extends Controller_Template
 		$this->template->content = View::forge('parking/index', $data);
 	}
 
-	public function action_404()
-	{
-		return new Response(Presenter::forge('welcome/404'), 404);
+	public function action_delete($id) {
+		$result = Parking::delete_parking($id);
+
+		Response::redirect('parking/');
+	}
+
+	public function action_daily() {
+		$data = array();
+
+		$data['stalls'] = Parking::get_usageByDay();
+		$data['times'] = array(8,9,10,11,12,13,14,15,16,17);
+
+		$this->template->title = "Daily Usage";
+		$this->template->content = View::forge('parking/daily', $data);
+
 	}
 }
 

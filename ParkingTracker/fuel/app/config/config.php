@@ -114,9 +114,9 @@ return array(
 	 * Security settings
 	 */
 	'security' => array(
-		'csrf_autoload'    => true,
-		'csrf_token_key'   => 'fuel_csrf_token',
-		'csrf_expiration'  => 0,
+		//'csrf_autoload'    => true,
+		//'csrf_token_key'   => 'fuel_csrf_token',
+		//'csrf_expiration'  => 0,
 
 		/**
 		 * A salt to make sure the generated security tokens are not predictable
@@ -258,7 +258,7 @@ return array(
 	/**************************************************************************/
 	/* Always Load                                                            */
 	/**************************************************************************/
-	// 'always_load'  => array(
+	 'always_load'  => array(
 
 		/**
 		 * These packages are loaded on Fuel's startup.
@@ -310,6 +310,6 @@ return array(
 		 * If you don't want the lang in a group use null as groupname.
 		 */
 		// 'language'  => array(),
-	// ),
+	 ),
 
 );

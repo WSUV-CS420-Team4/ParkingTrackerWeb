@@ -30,16 +30,17 @@ for authentication.
 
 ## Current Status
 
-Only displays license plate data uploaded, does not provide any authentication or analysis.
+The web application is currently displaying the data collected by the Parking Tracker application, displaying and allowing modification
+of the "streetmodel" or the data structure defining blocks and blockfaces. It also allows for the export of a spreadsheet with the
+parking data for a given day.
 
 ## Build/Install
 
-- Upload files
-- Run bower to populate dependencies
+- See installation directions
 
 ## Configuration
 
-None required so far
+Database configuration is in fuel/app/config/
 
 ## Known Bugs & Caveats
 
@@ -49,6 +50,5 @@ None so far
 
 - Provide an interface for OAuth authentication
 - Expand functionality
-- Provide an interface to access exported spreadsheet from API
 - Put authentication between user and data
 - Provide administrative interface
